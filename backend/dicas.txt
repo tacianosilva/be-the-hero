@@ -1,0 +1,42 @@
+Entidades da Aplicação
+
+- Ong (organization)
+- Caso (incident)
+
+Funcionalidades
+- Login/Logout
+- Cadastro de Ong
+- Cadastrar, Listar e Deletar casos
+- Listar
+- Entrar em contato via Whatsapp e E-mail
+
+
+/**
+ * Rota / Recurso
+ */
+app.get('/', (request, response) => {
+    return response.send('Hello World!');
+});
+
+/**
+ * Métodos HTTP:
+ * 
+ * GET: Buscar/Listar uma informação do back-end
+ * POST: Criar uma informação no back-end
+ * PUT: Alterar uma informação no back-end
+ * DELETE: Deletar uma informação no back-end
+ */
+
+/**
+ * Tipos de parâmetros:
+ * 
+ * Query Params: Parâmetros nomeados enviados na rota após "?" (Filtros/Paginação).
+ * Route Params: Parâmetros utilizados para identificar recursos.
+ * Request Body:
+ */
+
+/**
+ * Banco de Dados: SQLite.
+ * Driver: SELECT * FROM users
+ * Query Builder: table('users').select('*').where()
+ */
